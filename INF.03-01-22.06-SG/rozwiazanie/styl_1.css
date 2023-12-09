@@ -1,0 +1,48 @@
+*{
+    font-family: Helvetica;
+}
+footer, #baner{
+    background-color: #00838F;
+    color: #FFF;
+    padding: 5px;
+    font-size: 130%;
+    text-align: center;
+    clear: both;
+}
+#lewy1, #lewy2{
+    background-color: #EFEFEF;
+    width: 55%;
+}
+#lewy1{
+    height: 150px;
+    float: left;
+}
+#lewy2{
+    height: 300px;
+    float: left;
+}
+#prawy{
+    background-color: #4FB3BF;
+    width: 45%;
+    height: 450px;
+    text-align: center;
+    float: right;
+}
+img{
+    box-shadow: 10px 10px 7px DimGray;
+    margin: 20px;
+}
+table,td,th{
+    /* Nie wiem o co chodzi#4FB3BF, obramowanie tabeli i komórek połączone*/
+    border: solid 1px #4FB3BF;
+}
+table{
+    margin: auto;
+    width: 80%;
+}
+td,th{
+    padding: 4px;
+}
+tr:hover{
+    background-color: #4FB3BF;
+}
