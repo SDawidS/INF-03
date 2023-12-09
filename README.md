@@ -1,6 +1,6 @@
 # INF-03
 Zadania egzaminacyjne INF 03
 
-[INF.03-01-22.06-SG](EE.09-03-21.01-SG)
+[EE.09-03-21.01-SG](EE.09-03-21.01-SG)
 
 [INF.03-01-22.06-SG](INF.03-01-22.06-SG)
