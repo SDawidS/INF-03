@@ -1,0 +1,26 @@
+*{
+    font-family: Helvetica;
+}
+#baner, footer{
+    background-color: #AF4448;
+    color: #FFFFFF;
+    text-align: center;
+    height: 20px;
+    margin: 0px;
+    clear: both;
+}
+input[type="submit"]{
+    background-color: #AF4448;
+    color: #FFFFFF;
+    padding: 5px;
+    margin: 10px;
+}
+#lewy, #prawy{
+    float: left;
+    height: 650px;
+    width: 50%;
+    background-color: #FFA4A2;
+}
+h4{
+    margin: 0px;
+}
