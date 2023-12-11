@@ -1,0 +1,43 @@
+*{
+    font-family: Verdana;
+}
+#baner-lewy{
+    background-color: #29434E;
+    color: #FFF;
+    text-align: center;
+    width: 70%;
+    height: 70px;
+    float: left;
+}
+#baner-prawy{
+    background-color: #29434E;
+    color: #FFF;
+    width: 30%;
+    height: 70px;
+    float: left;
+}
+.listy{
+    background-color: #B0BEC5;
+    height: 320px;
+    overflow: scroll;
+    clear: both;
+}
+footer{
+    background-color: #29434E;
+    color: #FFF;
+}
+h3{
+    background-color: #546E7A;
+    color: #FFF;
+    margin: 0px;
+}
+h4{
+    text-align: center;
+    margin: 0px;
+}
+.blokFilmu{
+    padding: 5px;
+    width: 226px;
+    height: 280px;
+    display: inline-block;
+}
