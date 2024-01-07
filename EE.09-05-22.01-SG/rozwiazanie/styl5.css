@@ -1,0 +1,52 @@
+*{
+    font-family: Tahoma;
+}
+#baner1,
+#baner2{
+    background-color: #003d33;
+    color: #FFF;
+    text-align: center;
+    height: 50px;
+    float: left;
+}
+#baner1{
+    width: 70%;
+}
+#baner2{
+    width: 30%;
+}
+#lewy,
+#prawy{
+    background-color: #26a69a;
+    height: 550px;   
+    float: left;
+}
+#lewy{
+    width: 30%;
+}
+#prawy{
+    width: 70%;
+}
+footer{
+    background-color: #003d33;
+    color: #FFF;
+}
+.card{
+    width: 400px;
+    margin: 30px;
+    text-align: center;
+    border: 1px solid #003d33;
+}
+.card>button{
+    background-color: #003d33;
+    color: #FFF;
+    width: 100%;
+    height: 30px;
+    border: 0;
+}
+.card>button:hover{
+    background-color: #004c40;
+}
+label{
+    display: block;
+}
