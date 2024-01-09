@@ -1,0 +1,41 @@
+*{
+    background-color: #F6E5DC;
+    font-family: Verdana;
+}
+#baner h1{
+    background-color: #2F180C;
+    text-align: center;
+    color: khaki;
+    height: 60px;
+}
+#lewy{
+    width: 60%;
+    float: left;
+}
+#prawy{
+    font-size: 150%;
+    padding: 70px;
+    float: left;
+}
+#dolny h2, #dolny form{
+    background-color: #D0B6A8;
+    text-align: center;
+    padding: 30px;
+    margin: 0px;
+    clear: both;
+}
+footer, i{
+    background-color: #2F180C;
+    color: khaki;
+    height: 60px;
+}
+img{
+    height: 350px;
+}
+input[type="reset"],
+input[type="submit"]{
+    margin: 10px;
+    padding: 5px;
+    background-color: #2F180C;
+    color: khaki;
+}
