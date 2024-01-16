@@ -1,0 +1,18 @@
+kw1:
+
+SELECT imie, nazwisko, adres, miasto, czyRODO, czyBadania FROM pracownicy WHERE id=2;
+
+kw2:
+
+SELECT COUNT(*) FROM pracownicy;
+lub
+SELECT COUNT(id) FROM pracownicy;
+
+kw3:
+
+SELECT id, imie, nazwisko FROM pracownicy WHERE id=2;
+
+kw4:
+
+
+SELECT pracownicy.id, nazwa, opis FROM pracownicy INNER JOIN stanowiska ON stanowiska.id=pracownicy.stanowiska_id WHERE pracownicy.id=2;
