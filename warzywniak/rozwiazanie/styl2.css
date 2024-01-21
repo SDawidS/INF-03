@@ -1,0 +1,46 @@
+*{
+    font-family: Garamond;
+}
+#baner1{
+    background-color: #00600F;
+    color: #FFF;
+    text-align: center;
+    width: 75%;
+    height: 90px;
+    float: left;
+}
+#baner2{
+    background-color: #00600F;
+    color: #FFF;
+    width: 25%;
+    height: 90px;
+    float: left;
+}
+main{
+    background-color: #C8E6C9;
+    height: 600px;
+    overflow: scroll;
+    clear: both;
+}
+footer{
+    background-color: #00600F;
+    color: #FFF;
+    clear: both;
+}
+h5{
+    background-color: #00600F;
+    color: #FFF;
+    font-size: 200%;
+    text-align: center;
+    margin: 0px;
+}
+h2{
+    text-align: right;
+}
+.produkt{
+    margin: 10px;
+    border: 1px solid #00600F;
+    width: 300px;
+    height: 50vh;
+    float: left;
+}

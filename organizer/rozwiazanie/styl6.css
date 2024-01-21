@@ -1,0 +1,38 @@
+*{
+    font-family: Georgia;
+}
+.baner{
+    background-color: #3CB371;
+    color: #FFF;
+    height: 100px;
+    width: 40%;
+    float: left;
+}
+#baner{
+    background-color: #3CB371;
+    height: 100px;
+    width: 20%;
+    float: left;
+}
+main{
+    clear: both;
+}
+.dane{
+    background-color: #FFDAB9;
+    width: 170px;
+    height: 90px;
+    margin: 5px;
+    border: 1px solid #3CB371;
+    float: left;
+}
+footer{
+    background-color: #3CB371;
+    color: #FFF;
+    clear: both;
+}
+h6{
+    text-align: right;
+}
+form{
+    padding: 30px;
+}
