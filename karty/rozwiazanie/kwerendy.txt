@@ -1,0 +1,17 @@
+kw1:
+
+INSERT INTO Karty_wedkarskie VALUES(NULL, "Grzegorz", "Niemczyk", "Gdynia, Batorego 14/5", "2018-02-23", 0);
+
+
+kw2: 
+
+SELECT imie, nazwisko FROM Karty_wedkarskie WHERE punkty>20;
+
+
+kw3:
+
+SELECT akwen FROM Lowisko INNER JOIN zawody_wedkarskie ON zawody_wedkarskie.Lowisko_id=lowisko.id WHERE sedzia="Krzysztof Dobrowolski";
+
+kw4: 
+
+CREATE USER 'anna'@'localhost' IDENTIFIED BY 'anna123';

@@ -1,0 +1,15 @@
+kw1: 
+
+SELECT imie, nazwisko, punkty FROM Klienci ORDER BY punkty DESC LIMIT 3;
+
+kw2: 
+
+SELECT nazwa, COUNT(Typy_id) FROM Typy INNER JOIN Klienci ON Klienci.Typy_id=Typy.id GROUP BY Typy_id;
+
+kw3:
+
+SELECT zdjecie, imie, opinia FROM Klienci INNER JOIN opinie ON opinie.Klienci_id=Klienci.id WHERE Typy_id IN(2,3);
+
+kw4:
+
+ALTER TABLE Klienci ADD COLUMN adres VARCHAR(50);
