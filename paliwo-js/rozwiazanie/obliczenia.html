@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacja paliw</title>
+    <link rel="stylesheet" href="styl3.css">
+</head>
+<body>
+    <div id="baner-lewy">
+        <h1>Stacja Paliw</h1>
+    </div>
+    <div id="baner-prawy">
+        <a href="stacja.html"><img src="home.png"></a>
+        <a href="obliczenia.html"><img src="znak.png"></a>
+    </div>
+    <main>
+        <h3>Godziny otwarcia stacji paliw</h3>
+        <h3>Oblicz koszt paliwa</h3>
+        Rodzaj paliwa (1-benzyna, 2-olej napędowy): <br>
+        <input type="number" name="paliwo" id="paliwo"> <br>
+        Ile litrów: <br>
+        <input type="number" name="litry" id="litry">
+        <input onclick="oblicz()" type="button" value="OBLICZ">
+        <div id="result"></div>
+        <script>
+            function oblicz(){
+                const paliwo = Number(document.getElementById("paliwo").value);
+                const litry = Number(document.getElementById("litry").value);
+                let cena
+                switch (paliwo) {
+                    case 1:
+                        cena = 4;
+                        break;
+                    case 2:
+                        cena = 3.5;
+                        break
+                    default:
+                        cena = 0;
+                        break;
+                }
+                let wartosc = cena * litry;
+                document.getElementById("result").innerHTML = "koszt paliwa: " + wartosc + "zł";
+            }
+        </script>
+    </main>
+    <div id="lewy">
+        <a href="kwerendy.txt">Pobierz kwerendy</a>
+    </div>
+    <div id="prawy">
+        <img src="samochod.png" alt="samochód">
+    </div>
+    <footer>
+        <p>Stronę opracował: 0000000000</p>
+    </footer>
+</body>
+</html>
