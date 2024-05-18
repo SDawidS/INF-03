@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyremontuj mieszkanie</title>
+    <link rel="stylesheet" href="remont.css">
+</head>
+<body>
+    <div id="baner">
+        <img src="logo.png" alt="logo">
+    </div>
+    <div class="menu">
+        <a href="index.html">O NAS</a>
+    </div>
+    <div class="menu">
+        <a href="kontakt.html">KONTAKT</a>
+    </div>
+    <div class="menu">
+        <a href="kalkulator.html">KALKULATOR</a>
+    </div>
+    <div class="menu">
+        <a href="http://www.jakremontowac.pl" target="_blank">POLECANE STRONY</a>
+    </div>
+    <div id="main">
+        <h1>Malowanie pokoju: 8 zł za m<sup>2</sup></h1>
+        <p>Wymiary pokoju w metrach <input type="number" name="n1" id="n1"> <input type="number" name="n2" id="n2"></p> 
+        <button onclick="licz()">OBLICZ KOSZT</button>
+        <p id="p"></p>
+        <p id="k"></p>
+        <script>
+            function licz(){
+                const cena = 8;
+                const wysokosc = 2.7;
+                let a = document.getElementById('n1').value;
+                let b = document.getElementById('n2').value;
+                let p = document.getElementById('p');
+                let k = document.getElementById('k');
+
+                let powierzchnia = a * b + 2 * wysokosc * a + 2 * wysokosc * b;
+                let koszt = powierzchnia * cena;
+                p.innerHTML = 'Powierzchnia całkowita ścian: ' + Math.ceil(powierzchnia);
+                k.innerHTML = 'Koszt malowania: ' + Math.ceil(koszt) + " zł";
+            }
+        </script>
+    </div>
+    <footer>
+        <p>Autor strony: 0000000000</p>
+    </footer>
+    
+</body>
+</html>

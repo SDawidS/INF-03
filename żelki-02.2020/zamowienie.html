@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabryka żelków</title>
+    <link rel="stylesheet" href="styl9.css">
+</head>
+<body>
+    <div class="gorne">
+        <a href="index.html"><img src="logo.png" alt="logo fabryki"></a>
+    </div>
+    <div class="gorne" id="gorne-prawy">
+        <a href="zamowienie.html">Zamówienie</a>
+    </div>
+    <div id="baner">
+        <h2>Zamów nasz produkt</h2>
+    </div>
+    <div id="lewy">
+        <h1>Oferta</h1>
+        <table>
+            <tr>
+                <td>Kształty</td>
+                <td>Kolory</td>
+            </tr>
+            <tr>
+                <td>
+                    <ol>
+                        <li>miś</li>
+                        <li>żabka</li>
+                        <li>serce</li>
+                    </ol>
+                </td>
+                <td>
+                    <ol>
+                        <li>czerwony</li>
+                        <li>niebieski</li>
+                        <li>biały</li>
+                        <li>inny</li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="prawy">
+        Podaj numer kształtu:
+        <input type="number" name="nk" id="nk"> <br>
+        skomponuj swój kolor, podaj RGB:
+        R: <input type="number" name="R" id="R"> G: <input type="number" name="G" id="G"> B: <input type="number" name="B" id="B">
+        <button onclick="zamowienie()">Zamów</button>
+        <p id="k">Wybrany kształt</p>
+        <button id="kol">Wybrany kolor</button>
+    </div>
+    <script>
+        function zamowienie(){
+            let nk = document.getElementById('nk').value;
+            let r = document.getElementById('R').value;
+            let g = document.getElementById('G').value;
+            let b = document.getElementById('B').value;
+            let k = document.getElementById('k');
+            let kol = document.getElementById('kol');
+
+            let ksztalt = '';
+            switch (nk) {
+                case '1':
+                    ksztalt = 'miś';
+                    break;
+                
+                case '2':
+                    ksztalt = 'żabka';
+                    break;
+                
+                case '3':
+                    ksztalt = 'serce';
+                    break;
+                    
+                case '4':
+                    ksztalt = 'inny kształt';
+                    break;
+            
+                default:
+                    break;
+            }
+
+            k.innerHTML = 'Zamówiłeś żelka: ' + ksztalt;
+
+            if(r >= 0 && r < 256 && g >= 0 && g < 256 && b >= 0 && b < 256){
+                kol.style.backgroundColor = 'rgb('+r+','+g+','+b+')';
+            }
+            
+        }
+    </script>
+    <footer>
+        Autor strony: <i>0000000000</i>
+    </footer>
+</body>
+</html>

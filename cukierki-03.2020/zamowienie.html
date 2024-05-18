@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabryka cukierków</title>
+    <link rel="stylesheet" href="styl10.css">
+</head>
+<body>
+    <div class="gorne" id="gorny-prawy">
+        <a href="zamowienie.html">Zamów cukierki</a>
+    </div>
+    <div class="gorne">
+        <a href="index.html"><img src="logotyp.png" alt="Nasze logo"></a>
+    </div>
+    <div id="baner">
+        <h1>Strefa zamówień</h1>
+    </div>
+    <div id="lewy">
+        Numer kształtu: <br>
+        <input type="number" name="nr" id="nr"> <br>
+        skomponuj swój kolor, podaj RGB: <br>
+        R: <input type="number" name="r" id="r"> G: <input type="number" name="g" id="g"> B: <input type="number" name="b" id="b"> <br>
+        <button onclick="order()">Zamówienie</button>
+        <p id="res">Twoje zamówienie </p>
+        <button id="kol">Kolor</button>
+        <script>
+            function order(){
+                let nr = document.getElementById('nr').value;
+                let r = document.getElementById('r').value;;
+                let g = document.getElementById('g').value;
+                let b = document.getElementById('b').value;
+                let res = document.getElementById('res');
+                let kol = document.getElementById('kol');
+                let rodzaj;
+                switch (nr) {
+                    case '1':
+                        rodzaj = 'cytryna';
+                        break;
+                
+                    case '2':
+                        rodzaj = 'liść';
+                        break;
+                
+                    case '3':
+                        rodzaj = 'banan';
+                        break;
+                
+                    default:
+                        rodzaj = 'inny';
+                        break;
+                }
+                res.innerHTML = 'Twoje zamówienie ' + rodzaj;
+
+                if(r >= 0 && r < 256 && g >= 0 && g < 256 && b >= 0 && b < 256){
+                    kol.style.backgroundColor = 'rgb('+r+','+g+','+b+')';
+                }
+            }
+        </script>
+    </div>
+    <div id="prawy">
+        <h2>Nasza oferta</h2>
+        <table>
+            <tr>
+                <td>Kształty</td>
+                <td rowspan="2">Możesz zamówić <br> dowolny kolor cukierka</td>
+            </tr>
+            <tr>
+                <td>
+                    <ol>
+                        <li>cytryna</li>
+                        <li>liść</li>
+                        <li>banan</li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        Autor strony: <b>0000000000</b>
+    </footer>
+</body>
+</html>

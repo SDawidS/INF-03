@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hurtownia</title>
+    <link rel="stylesheet" href="styl4.css">
+</head>
+<body>
+    <div id="logo">
+        <img src="logo.png" alt="hurtownia">
+    </div>
+    <div id="menu">
+        <a href="index.html">Strona główna</a>
+        <a href="zamowienia.html">Zamówienia</a>
+        <a href="blog.html">Blog o kawie</a>
+        <a href="http://gatunki-kawy.pl" target="_blank">Odwiedź także</a>
+    </div>
+    <div id="baner">
+        <h1>Hurtownia kawy</h1>
+    </div>
+    <div id="lewy">
+        <h2>Oferta</h2>
+        <ol>
+            <li>Kawa polona Arabica</li>
+            <li>Kawa palona Robusta</li>
+            <li>Kawa bezkofeinowa</li>
+            <li>Kawa zielona</li>
+        </ol>
+    </div>
+    <div id="prawy">
+        Podaj numer kawy: <br>
+        <input type="number" name="nr" id="nr"> <br>
+        Podaj wagę w dekagramach: <br>
+        <input type="number" name="waga" id="waga"> <br>
+        <button onclick="koszt()">Zamów</button>
+        <p id="res"></p>
+    </div>
+    <script>
+        function koszt(){
+            let nr = document.getElementById('nr').value;
+            let waga = document.getElementById('waga').value;
+            let res = document.getElementById('res');
+            let cena;
+            switch (nr) {
+                case '1':
+                    cena = 5;
+                    break;
+                case '2':
+                    cena = 7;
+                    break;
+                case '3':
+                    cena = 6;
+                    break;
+                default:
+                    cena = 0;
+                    break;
+            }
+            let koszt = waga * cena;
+            res.innerHTML = 'Koszt zamówienia wynosi: ' + koszt + ' zł';
+        }
+    </script>
+    <footer>
+        Stronę przygotował: <b>0000000000</b>
+    </footer>
+</body>
+</html>
