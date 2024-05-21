@@ -1,0 +1,15 @@
+kw1: 
+
+SELECT nazwa, ilosc nazwaProd FROM materialy INNER JOIN Producenci ON Producenci.id = materialy.Producenci_id WHERE ilosc > 9;
+
+kw2: 
+
+SELECT nazwa, nazwaProd, nazwaJedn FROM materialy INNER JOIN Jednostki ON Jednostki.id = materialy.Jednostki_id INNER JOIN Producenci ON Producenci.id = materialy.Producenci_id;
+
+kw3:
+
+CREATE USER `zaopatrzenie`@`localhost` IDENTIFIED BY 'Z@op@trzenie';
+
+kw4:
+
+GRANT SELECT, UPDATE, INSERT, DELETE ON firma.* TO `zaopatrzenie`@`localhost`;

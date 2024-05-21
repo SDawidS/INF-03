@@ -1,0 +1,50 @@
+*{
+    font-family: Verdana;
+    text-align: center;
+}
+#baner{
+    background-color: darkgreen;
+    color: white;
+    padding: 5px;
+}
+#lewy{
+    background-color: palegreen;
+    width: 30%;
+    height: 500px;
+    float: left;
+}
+#prawy{
+    background-color: honeydew;
+    width: 70%;
+    height: 400px;
+    padding-top: 100px; /*Centralna Komisja Egzekucyjna się myli padding-top psuje stronę bo div prawy wtedy ma 600px wysokości, można  zmienić wysokość prawy na 400px*/
+    float: left;
+}
+footer{
+    background-color: palegreen;
+    padding: 3px;
+    clear: both;
+}
+table, td{
+    border: 1px solid DarkGreen;
+    border-collapse: collapse;
+}
+table{
+    margin: auto;
+    width: 95%;
+}
+table, th{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+button{
+    background-color: darkgreen;
+    color: white;
+    padding: 5px;
+}
+button:hover{
+    background-color: honeydew;
+    color: darkgreen;
+}
